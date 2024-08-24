@@ -1,5 +1,5 @@
 Hi 👋, I'm Mohammad Waqas  
-<div align="center"> <img src="https://raw.githubusercontent.com/WaqasAsif2002/Waqasasif/main/Youtube%20Channel%20Banner.png"> </div>
+<div align="center"> <img src="https://raw.githubusercontent.com/WaqasAsif2002/WaqasAsif2002/main/Youtube%20Channel%20Banner.png"> </div>
 <br>
 
  <center><b>A passionate Full Stack developer from Pakistan</b></center>
