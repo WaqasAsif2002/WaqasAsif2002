@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/WaqasAsif2002/WaqasAsif2002/refs/heads/main/Blue%20and%20White%20Gradient%20Profile%20Data%20Analyst%20LinkedIn%20Article%20Cover%20Image.png" alt="Banner" />
 </p>
 
-<h1 align="center">Hi 👋, I'm Waqas Asif</h1>
+<h1 align="center">Hi 👋, I'm Muhammad Waqas</h1>
 <h3 align="center">Full Stack Developer | Software Developer | SQA Engineer | Freelancer</h3>
 
 ---
