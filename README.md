@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="[https://raw.githubusercontent.com/WaqasAsif2002/WaqasAsif2002/refs/heads/main/Blue%20and%20White%20Gradient%20Profile%20Data%20Analyst%20LinkedIn%20Article%20Cover%20Image.png](https://raw.githubusercontent.com/WaqasAsif2002/WaqasAsif2002/refs/heads/main/bg.png)" alt="Banner" />
+  <img src="https://github.com/WaqasAsif2002/WaqasAsif2002/blob/main/bg.png" alt="Banner" />
 </p>
 
 <h1 align="center">Hi 👋, I'm Muhammad Waqas</h1>
