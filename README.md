@@ -75,14 +75,14 @@ class SoftwareEngineer {
                 "Git",
                 "GitHub",
                 "Postman",
-                "VS Code",
-                "Jira"
+                "VS Code"
+                
             ],
             testing: [
                 "Selenium",
                 "Postman",
-                "JMeter",
-                "Jira"
+                "JMeter"
+               
             ]
         };
     }
@@ -252,10 +252,6 @@ console.log(
 <td align="center" width="110">
 <img src="https://skillicons.dev/icons?i=postman" width="48" height="48" alt="Postman"/>
 <br>Postman
-</td>
-  <td align="center" width="110">
-<img src="https://skillicons.dev/icons?i=Jira" width="48" height="48" alt="Jira"/>
-<br>Jira
 </td>
 <td align="center" width="110">
 <img src="https://skillicons.dev/icons?i=firebase" width="48" height="48" alt="Firebase"/>
