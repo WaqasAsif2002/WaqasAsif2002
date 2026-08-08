@@ -263,58 +263,6 @@ console.log(
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-## 🚀 FEATURED PROJECTS
-
-<div align="center">
-
-### 🅿️ ParkEase — Pre-Parking Management System
-
-> A full-stack parking management platform designed to simplify parking reservations.
-
-```text
-✓ Instant Parking Slot Booking
-✓ Guest Mode
-✓ QR-Based Receipts
-✓ Online Payment Integration
-✓ Booking Timer
-✓ Admin Dashboard
-✓ Slot Management
-✓ Nearby Amenities
-✓ WhatsApp Notifications
-```
-
-**Tech:** React • Tailwind CSS • Supabase • PostgreSQL
-
----
-
-### 📱 CashMish — Mobile Reselling Platform
-
-> A modern mobile reselling platform with user and admin functionality.
-
-```text
-✓ Guest Mode
-✓ LocalStorage
-✓ Dynamic Brand Filtering
-✓ Product Management
-✓ Admin Bidding System
-✓ Analytics Dashboard
-✓ Responsive UI
-```
-
-**Tech:** React • Vite • JSX • Tailwind CSS
-
----
-
-### 🤖 AI Mood Analyzer
-
-> An NLP-based application designed to analyze text and identify user mood.
-
-**Tech:** Python • Flask • NLP
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
 ## 📊 GITHUB PERFORMANCE
 
 <div align="center">
