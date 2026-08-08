@@ -1,6 +1,6 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,3,5,6,11,12,20,24,30&height=300&section=header&text=MUHAMMAD%20WAQAS%20ASIF&fontSize=70&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20MERN%20%7C%20.NET%20Developer&descAlignY=55&descAlign=50"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,3,5,6,11,12,20,24,30&height=300&section=header&text=%20WAQAS%20ASIF&fontSize=70&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Software%20Engineer%20%7C%20MERN%20%7C%20.NET%20Developer&descAlignY=55&descAlign=50"/>
 
 <p align="center">
   <a href="https://git.io/typing-svg">
