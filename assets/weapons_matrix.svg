@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 330" width="100%">
+  <defs>
+    <filter id="subtle-bloom" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+    </filter>
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="plate-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark base canvas -->
+  <rect width="100%" height="100%" fill="#02040A" rx="20"/>
+
+  <!-- Subtle ambient glow -->
+  <g filter="url(#subtle-bloom)">
+    <circle cx="420" cy="165" r="140" fill="url(#glow-cyan)"/>
+  </g>
+
+  <!-- Structural guides -->
+  <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="0.5">
+    <line x1="70" y1="0" x2="70" y2="330" />
+    <line x1="770" y1="0" x2="770" y2="330" />
+    <line x1="0" y1="50" x2="840" y2="50" />
+    <line x1="0" y1="280" x2="840" y2="280" />
+  </g>
+
+  <!-- Outer Glass Frame -->
+  <rect x="70" y="30" width="700" height="270" rx="16" fill="url(#plate-grad)" stroke="url(#border-grad)" stroke-width="1"/>
+
+  <!-- Header -->
+  <g transform="translate(100, 60)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="10" fill="#525252" letter-spacing="3" font-weight="700">TECHNICAL ARSENAL // COMPENDIUM</text>
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" fill="#FFFFFF" font-weight="800" letter-spacing="-0.5px">Capabilities &amp; Tech Stack Matrix</text>
+  </g>
+
+  <!-- Four Quadrants Layout Grid -->
+  
+  <!-- Q1: Frontend -->
+  <g transform="translate(100, 125)">
+    <text x="0" y="0" font-family="monospace" font-size="10" fill="#00F5FF" font-weight="700" letter-spacing="1">01 // FRONTEND CORTEX</text>
+    
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">Next.js / React.js</text>
+    <circle cx="150" cy="18" r="2.5" fill="#00F5FF"/>
+    <circle cx="160" cy="18" r="2.5" fill="#00F5FF"/>
+    <circle cx="170" cy="18" r="2.5" fill="#00F5FF"/>
+    <circle cx="180" cy="18" r="2.5" fill="#00F5FF" opacity="0.3"/>
+    
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">TypeScript / Tailwind</text>
+    <circle cx="150" cy="38" r="2.5" fill="#00F5FF"/>
+    <circle cx="160" cy="38" r="2.5" fill="#00F5FF"/>
+    <circle cx="170" cy="38" r="2.5" fill="#00F5FF"/>
+    <circle cx="180" cy="38" r="2.5" fill="#00F5FF" opacity="0.3"/>
+  </g>
+
+  <!-- Q2: Backend -->
+  <g transform="translate(440, 125)">
+    <text x="0" y="0" font-family="monospace" font-size="10" fill="#8B5CF6" font-weight="700" letter-spacing="1">02 // BACKEND ENGINE</text>
+    
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">Node.js / Express.js</text>
+    <circle cx="150" cy="18" r="2.5" fill="#8B5CF6"/>
+    <circle cx="160" cy="18" r="2.5" fill="#8B5CF6"/>
+    <circle cx="170" cy="18" r="2.5" fill="#8B5CF6"/>
+    <circle cx="180" cy="18" r="2.5" fill="#8B5CF6" opacity="0.3"/>
+    
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">RESTful APIs / Security</text>
+    <circle cx="150" cy="38" r="2.5" fill="#8B5CF6"/>
+    <circle cx="160" cy="38" r="2.5" fill="#8B5CF6"/>
+    <circle cx="170" cy="38" r="2.5" fill="#8B5CF6"/>
+    <circle cx="180" cy="38" r="2.5" fill="#8B5CF6"/>
+  </g>
+
+  <!-- Q3: Database -->
+  <g transform="translate(100, 215)">
+    <text x="0" y="0" font-family="monospace" font-size="10" fill="#EC4899" font-weight="700" letter-spacing="1">03 // DATABASES &amp; STORAGE</text>
+    
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">MongoDB / Firebase</text>
+    <circle cx="150" cy="18" r="2.5" fill="#EC4899"/>
+    <circle cx="160" cy="18" r="2.5" fill="#EC4899"/>
+    <circle cx="170" cy="18" r="2.5" fill="#EC4899"/>
+    <circle cx="180" cy="18" r="2.5" fill="#EC4899" opacity="0.3"/>
+    
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">PostgreSQL / MySQL</text>
+    <circle cx="150" cy="38" r="2.5" fill="#EC4899"/>
+    <circle cx="160" cy="38" r="2.5" fill="#EC4899"/>
+    <circle cx="170" cy="38" r="2.5" fill="#EC4899" opacity="0.3"/>
+  </g>
+
+  <!-- Q4: DevOps -->
+  <g transform="translate(440, 215)">
+    <text x="0" y="0" font-family="monospace" font-size="10" fill="#10B981" font-weight="700" letter-spacing="1">04 // ORCHESTRATION &amp; OPS</text>
+    
+    <text x="0" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">Docker / Containerization</text>
+    <circle cx="150" cy="18" r="2.5" fill="#10B981"/>
+    <circle cx="160" cy="18" r="2.5" fill="#10B981"/>
+    <circle cx="170" cy="18" r="2.5" fill="#10B981" opacity="0.3"/>
+    <circle cx="180" cy="18" r="2.5" fill="#10B981" opacity="0.3"/>
+    
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#FFFFFF" font-weight="600">Git / GitHub Actions</text>
+    <circle cx="150" cy="38" r="2.5" fill="#10B981"/>
+    <circle cx="160" cy="38" r="2.5" fill="#10B981"/>
+    <circle cx="170" cy="38" r="2.5" fill="#10B981"/>
+    <circle cx="180" cy="38" r="2.5" fill="#10B981"/>
+  </g>
+
+</svg>

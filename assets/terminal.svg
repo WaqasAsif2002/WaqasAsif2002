@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="360">
+  <style>
+    .terminal-title {
+      font-family: Menlo, Monaco, "Courier New", Courier, monospace;
+      font-size: 13px;
+      fill: #64748B;
+      font-weight: 500;
+    }
+    .terminal-text {
+      font-family: "Fira Code", Menlo, Monaco, Consolas, "Courier New", monospace;
+      font-size: 13px;
+      fill: #A7F3D0;
+      line-height: 1.5;
+    }
+    .prompt {
+      fill: #34D399;
+      font-weight: bold;
+    }
+    .cmd {
+      fill: #ffffff;
+    }
+    .spec-label {
+      fill: #06B6D4;
+      font-weight: bold;
+    }
+    .spec-val {
+      fill: #E2E8F0;
+    }
+    .crit {
+      fill: #F43F5E;
+    }
+    .warn {
+      fill: #F59E0B;
+    }
+    .ok {
+      fill: #10B981;
+    }
+    
+    /* Typing & Boot Animations */
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+    @keyframes fade-in {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    .line-1 { animation: fade-in 0.2s ease forwards; }
+    .line-2 { opacity: 0; animation: fade-in 0.2s ease 1s forwards; }
+    .line-3 { opacity: 0; animation: fade-in 0.2s ease 1.8s forwards; }
+    .line-4 { opacity: 0; animation: fade-in 0.2s ease 2.5s forwards; }
+    .line-5 { opacity: 0; animation: fade-in 0.2s ease 3.2s forwards; }
+    .line-6 { opacity: 0; animation: fade-in 0.2s ease 3.8s forwards; }
+    
+    .neofetch-area {
+      opacity: 0;
+      animation: fade-in 0.6s cubic-bezier(0.16, 1, 0.3, 1) 4.5s forwards;
+    }
+    
+    .cursor {
+      animation: blink 0.8s infinite;
+      fill: #00F5FF;
+    }
+    
+    /* CRT Scanline & flicker effects */
+    @keyframes scanline {
+      0% { transform: translateY(-360px); }
+      100% { transform: translateY(360px); }
+    }
+    .scanline-overlay {
+      animation: scanline 8s linear infinite;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+      background-size: 100% 4px, 6px 100%;
+    }
+  </style>
+
+  <defs>
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#020617" flood-opacity="0.75"/>
+    </filter>
+
+    <!-- Glass Gradients -->
+    <linearGradient id="window-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#030712" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#FF00FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Window Frame -->
+  <rect x="15" y="15" width="770" height="330" rx="16" fill="url(#window-grad)" stroke="url(#border-grad)" stroke-width="1.5" filter="url(#shadow)" />
+
+  <!-- Window Header / Title Bar -->
+  <g transform="translate(15, 15)">
+    <!-- Header Backing -->
+    <path d="M 1.5 15 C 1.5 7.5, 7.5 1.5, 15 1.5 L 753.5 1.5 C 761 1.5, 767 7.5, 767 15 L 767 36 L 1.5 36 Z" fill="#0A0E1A" />
+    <line x1="1.5" y1="36" x2="767" y2="36" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1" />
+    
+    <!-- Control Buttons (Linux/macOS style) -->
+    <circle cx="22" cy="18" r="6" fill="#F43F5E" />
+    <circle cx="40" cy="18" r="6" fill="#F59E0B" />
+    <circle cx="58" cy="18" r="6" fill="#10B981" />
+    
+    <!-- Window Title -->
+    <text x="385" y="22" text-anchor="middle" class="terminal-title">abdullah@cyberdeck: ~</text>
+  </g>
+
+  <!-- Terminal Window Content -->
+  <g transform="translate(35, 70)" class="terminal-text">
+    
+    <!-- Line 1: Typing Command -->
+    <g class="line-1">
+      <text x="0" y="20"><tspan class="prompt">guest@cyberdeck:~$</tspan> <tspan class="cmd">ssh netrunner@abdullahata.dev</tspan></text>
+    </g>
+
+    <!-- Line 2: Connection Response -->
+    <g class="line-2">
+      <text x="0" y="42">Connecting to abdullahata.dev ([2001:db8:85a3::8a2e:370:7334])...</text>
+    </g>
+
+    <!-- Line 3: Handshake -->
+    <g class="line-3">
+      <text x="0" y="64"><tspan class="ok">[OK]</tspan> Host verified. Establishing quantum encrypted tunnel...</text>
+    </g>
+
+    <!-- Line 4: Auth -->
+    <g class="line-4">
+      <text x="0" y="86"><tspan class="ok">[OK]</tspan> Neural interface synced. Handshake complete.</text>
+    </g>
+
+    <!-- Line 5: Triggering script -->
+    <g class="line-5">
+      <text x="0" y="108"><tspan class="prompt">netrunner@cyberdeck:~$</tspan> <tspan class="cmd">./specs_fetch.sh --all</tspan></text>
+    </g>
+
+    <!-- Line 6: Fetching -->
+    <g class="line-6">
+      <text x="0" y="130">Loading hardware specs &amp; tech registry... <tspan class="ok">100%</tspan></text>
+    </g>
+
+    <!-- Neofetch Specifications Layout (Fades in) -->
+    <g class="neofetch-area" transform="translate(0, 150)">
+      
+      <!-- Styled Glowing Hex Logo Symbol -->
+      <g transform="translate(30, 10)">
+        <!-- Outer Glowing Hex -->
+        <polygon points="45,0 90,26 90,78 45,104 0,78 0,26" fill="none" stroke="url(#logo-grad)" stroke-width="2" />
+        <polygon points="45,10 80,30 80,70 45,90 10,70 10,30" fill="none" stroke="url(#logo-grad)" stroke-width="1" stroke-opacity="0.5" />
+        
+        <!-- Central Tech Cross Symbol -->
+        <line x1="45" y1="25" x2="45" y2="75" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.8" />
+        <line x1="20" y1="52" x2="70" y2="52" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.8" />
+        <circle cx="45" cy="52" r="6" fill="#00F5FF" />
+      </g>
+      
+      <!-- Specifications Output Table -->
+      <g transform="translate(170, 0)">
+        <text x="0" y="15" class="cmd" font-weight="bold" fill="#00F5FF" font-size="14">netrunner@AbdullahOS</text>
+        <line x1="0" y1="22" x2="220" y2="22" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+        
+        <text x="0" y="42"><tspan class="spec-label">OS: </tspan><tspan class="spec-val">AbdullahOS v2.0.77-augmented</tspan></text>
+        <text x="0" y="60"><tspan class="spec-label">Kernel: </tspan><tspan class="spec-val">MERN-DevOps-6.10.12-x86_64</tspan></text>
+        <text x="0" y="78"><tspan class="spec-label">Uptime: </tspan><tspan class="spec-val">24 years (debugging mode)</tspan></text>
+        <text x="0" y="96"><tspan class="spec-label">Shell: </tspan><tspan class="spec-val">zsh / nodejs-core</tspan></text>
+        <text x="0" y="114"><tspan class="spec-label">CPU: </tspan><tspan class="spec-val">Caffeine Powered JS Compiler</tspan></text>
+        <text x="0" y="132"><tspan class="spec-label">RAM: </tspan><tspan class="spec-val">32GB Neural Virtual Cache</tspan></text>
+        
+        <!-- Blinking Prompt Line -->
+        <text x="0" y="156"><tspan class="prompt">netrunner@cyberdeck:~$</tspan> <tspan class="cursor">█</tspan></text>
+      </g>
+    </g>
+    
+  </g>
+</svg>

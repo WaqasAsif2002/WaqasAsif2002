@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="100%" height="250">
+  <style>
+    .text-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: 4px;
+    }
+    .text-subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #00F5FF;
+      letter-spacing: 3px;
+    }
+    .text-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 13px;
+      fill: #94A3B8;
+      letter-spacing: 0.5px;
+    }
+    @keyframes pulse-glow {
+      0% { opacity: 0.4; transform: scale(1) translate(0px, 0px); }
+      50% { opacity: 0.7; transform: scale(1.15) translate(10px, -10px); }
+      100% { opacity: 0.4; transform: scale(1) translate(0px, 0px); }
+    }
+    .glow-1 {
+      animation: pulse-glow 8s ease-in-out infinite;
+      transform-origin: 200px 100px;
+    }
+    .glow-2 {
+      animation: pulse-glow 12s ease-in-out infinite alternate;
+      transform-origin: 600px 150px;
+    }
+  </style>
+
+  <defs>
+    <filter id="blur-bg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="55" result="blur" />
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#020617" flood-opacity="0.6"/>
+    </filter>
+
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0891B2" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glow-pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D946EF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#701A75" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="plate-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0.25"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0B0F19" rx="20" />
+
+  <g filter="url(#blur-bg)">
+    <circle class="glow-1" cx="180" cy="90" r="140" fill="url(#glow-cyan)" />
+    <circle class="glow-2" cx="620" cy="160" r="160" fill="url(#glow-pink)" />
+  </g>
+
+  <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="1">
+    <line x1="60" y1="0" x2="60" y2="250" />
+    <line x1="740" y1="0" x2="740" y2="250" />
+    <line x1="0" y1="60" x2="800" y2="60" />
+    <line x1="0" y1="190" x2="800" y2="190" />
+  </g>
+
+  <rect x="30" y="30" width="740" height="190" rx="24" fill="url(#plate-grad)" stroke="url(#border-grad)" stroke-width="1.5" filter="url(#shadow)" />
+  <path d="M 31 54 C 31 41, 41 31, 54 31 L 746 31" fill="none" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1.2" />
+
+  <rect x="65" y="75" width="4" height="100" rx="2" fill="#06B6D4" />
+  
+  <g transform="translate(85, 0)">
+    <text x="0" y="112" class="text-title">ABDULLAH ATA</text>
+    <text x="2" y="142" class="text-subtitle">FULL STACK ARCHITECT &amp; CLOUD DEVOPS</text>
+    <text x="2" y="172" class="text-desc">Engineering high-performance digital products at Eritheia Labs • Lahore, PK</text>
+  </g>
+
+  <g transform="translate(680, 52)" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.5" fill="none">
+    <rect x="0" y="10" width="2.5" height="4" rx="0.5" fill="#ffffff" fill-opacity="0.35" stroke="none" />
+    <rect x="4" y="7" width="2.5" height="7" rx="0.5" fill="#ffffff" fill-opacity="0.35" stroke="none" />
+    <rect x="8" y="4" width="2.5" height="10" rx="0.5" fill="#ffffff" fill-opacity="0.75" stroke="none" />
+    <rect x="12" y="0" width="2.5" height="14" rx="0.5" fill="#ffffff" fill-opacity="0.75" stroke="none" />
+    
+    <path d="M 23 12 A 4 4 0 0 1 27 8 A 8 8 0 0 1 31 12" stroke-linecap="round" />
+    <circle cx="27" cy="13" r="1.2" fill="#ffffff" fill-opacity="0.75" stroke="none" />
+
+    <rect x="40" y="2" width="20" height="10" rx="3" />
+    <rect x="43" y="4" width="11" height="6" rx="1" fill="#00F5FF" stroke="none" />
+    <path d="M 61 5 L 61 9" stroke-linecap="round" />
+  </g>
+</svg>

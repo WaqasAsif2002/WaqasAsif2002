@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 380" width="100%">
+  <defs>
+    <!-- Cinematic Blur Filter -->
+    <filter id="volumetric-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="55" result="blur"/>
+    </filter>
+
+    <!-- Drop Shadow for 3D Inset -->
+    <filter id="drop-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="text-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="neon-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0284C7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="neon-violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#D946EF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glass-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Styles for animation -->
+    <style>
+      @keyframes morph-light {
+        0% { transform: translate(0px, 0px) scale(1); }
+        33% { transform: translate(30px, -40px) scale(1.1); }
+        66% { transform: translate(-20px, 20px) scale(0.95); }
+        100% { transform: translate(0px, 0px) scale(1); }
+      }
+      @keyframes terminal-boot {
+        0% { opacity: 0; }
+        10% { opacity: 1; }
+        100% { opacity: 1; }
+      }
+      @keyframes cursor-blink {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+      }
+      .ambient-1 {
+        animation: morph-light 10s ease-in-out infinite;
+        transform-origin: 300px 180px;
+      }
+      .ambient-2 {
+        animation: morph-light 14s ease-in-out infinite alternate;
+        transform-origin: 600px 200px;
+      }
+      .term-line {
+        font-family: "Fira Code", Consolas, Monaco, monospace;
+        font-size: 11px;
+        fill: #94A3B8;
+        opacity: 0;
+      }
+      .term-prompt { fill: #10B981; font-weight: bold; }
+      .term-cmd { fill: #ffffff; }
+      .cursor { animation: cursor-blink 0.8s infinite; fill: #00F5FF; }
+
+      .boot-1 { animation: terminal-boot 0.1s ease 0.5s forwards; }
+      .boot-2 { animation: terminal-boot 0.1s ease 1.2s forwards; }
+      .boot-3 { animation: terminal-boot 0.1s ease 2.0s forwards; }
+      .boot-4 { animation: terminal-boot 0.1s ease 2.8s forwards; }
+      .boot-5 { animation: terminal-boot 0.1s ease 3.5s forwards; }
+    </style>
+  </defs>
+
+  <!-- Deep space background -->
+  <rect width="100%" height="100%" fill="#02040A" rx="20"/>
+
+  <!-- Volumetric soft lights -->
+  <g filter="url(#volumetric-glow)">
+    <circle class="ambient-1" cx="280" cy="160" r="150" fill="url(#neon-cyan)"/>
+    <circle class="ambient-2" cx="580" cy="200" r="170" fill="url(#neon-violet)"/>
+  </g>
+
+  <!-- Clean design grid guides -->
+  <g stroke="#ffffff" stroke-opacity="0.02" stroke-width="0.5">
+    <line x1="70" y1="0" x2="70" y2="380" />
+    <line x1="770" y1="0" x2="770" y2="380" />
+    <line x1="0" y1="60" x2="840" y2="60" />
+    <line x1="0" y1="320" x2="840" y2="320" />
+  </g>
+
+  <!-- Left Side: Cinematic Typography -->
+  <g transform="translate(70, 0)">
+    <text x="0" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="64" fill="url(#text-glow)" font-weight="800" letter-spacing="-3px">ABDULLAH ATA</text>
+    <text x="2" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" fill="#64748B" letter-spacing="4px" font-weight="600">FULL STACK DEVELOPER &amp; DEVOPS</text>
+    <text x="2" y="210" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#94A3B8" font-weight="400" letter-spacing="-0.2px">Crafting seamless, high-performance web systems.</text>
+  </g>
+
+  <!-- Right Side: 3D Angled Interactive Terminal Glass Panel -->
+  <g transform="translate(480, 80)" filter="url(#drop-shadow)">
+    <!-- 3D Perspective Rotation simulation via SVG transform -->
+    <g transform="scale(0.95) skewY(-2)">
+      <!-- Outer glass border and background -->
+      <rect x="0" y="0" width="280" height="200" rx="16" fill="url(#glass-grad)" stroke="url(#border-grad)" stroke-width="1.2" />
+      <path d="M 1 20 L 279 20" stroke="#ffffff" stroke-opacity="0.08" stroke-width="0.8"/>
+      
+      <!-- Window buttons -->
+      <circle cx="15" cy="10" r="4" fill="#EF4444" opacity="0.8"/>
+      <circle cx="27" cy="10" r="4" fill="#F59E0B" opacity="0.8"/>
+      <circle cx="39" cy="10" r="4" fill="#10B981" opacity="0.8"/>
+      <text x="265" y="13" font-family="monospace" font-size="9" fill="#475569" text-anchor="end">zsh</text>
+
+      <!-- Boot Lines -->
+      <g transform="translate(15, 30)">
+        <text class="term-line boot-1" x="0" y="15"><tspan class="term-prompt">~$</tspan> <tspan class="term-cmd">init uplink</tspan></text>
+        <text class="term-line boot-2" x="0" y="35" fill="#475569">Connecting to neural core...</text>
+        <text class="term-line boot-3" x="0" y="55"><tspan class="term-prompt">~$</tspan> <tspan class="term-cmd">load core_specs.db</tspan></text>
+        <text class="term-line boot-4" x="0" y="75" fill="#10B981">[OK] Spec matrix populated.</text>
+        
+        <!-- Interactive Specs -->
+        <g class="boot-5" transform="translate(0, 95)">
+          <text x="0" y="5" font-family="monospace" font-size="11" fill="#00F5FF" font-weight="bold">SPECS // PROFILE</text>
+          <text x="0" y="20" font-family="monospace" font-size="11" fill="#E2E8F0">ROLE: Full Stack Engineer</text>
+          <text x="0" y="35" font-family="monospace" font-size="11" fill="#E2E8F0">CORP: Eritheia Labs</text>
+          <text x="0" y="50" font-family="monospace" font-size="11" fill="#E2E8F0">LOC: Lahore, PK</text>
+          <text x="0" y="65" font-family="monospace" font-size="11" fill="#38BDF8">uptime: active<tspan class="cursor">_</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+</svg>
