@@ -135,15 +135,9 @@ console.log(
 ## 🌐 CONNECT WITH ME
 
 <div align="center">
-
-<a href="https://github.com/WaqasAsif2002">
-  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" height="40" alt="GitHub"/>
-</a>
-
-<a href="https://www.linkedin.com/in/mohammad-waqas-7a98aa1ab/"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" height="40" alt="LinkedIn"/> </a>
-
-<a href="mailto:waqas.khokhar2002@gmail.com"> <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" height="40" alt="Email"/> </a>
-
+  <a href="https://github.com/WaqasAsif2002"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" height="40" alt="GitHub"/></a>
+  <a href="https://www.linkedin.com/in/mohammad-waqas-7a98aa1ab/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" height="40" alt="LinkedIn"/></a>
+  <a href="mailto:waqas.khokhar2002@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" height="40" alt="Email"/></a>
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
@@ -269,18 +263,21 @@ console.log(
 <div align="center">
 
 <!-- STREAK STATS -->
-<p align="center">
-  <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=WaqasAsif2002&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideNums=FFFFFF&sideLabels=00D9FF&dates=FFFFFF&border_radius=10" alt="GitHub Streak"/>
-</p>
+
 
 <p align="center">
   <img height="180" src="https://github-readme-stats.vercel.app/api?username=WaqasAsif2002&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF&border_radius=10&count_private=true&include_all_commits=true&custom_title=⚡%20GitHub%20Statistics" alt="GitHub Stats"/>
 </p>
 
 
+
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=WaqasAsif2002&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF&border_radius=10&langs_count=8&card_width=320" alt="Top Languages"/>
 
 <br>
+
+<p align="center">
+  <img height="180" src="https://github-readme-streak-stats.herokuapp.com/?user=WaqasAsif2002&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&sideNums=FFFFFF&sideLabels=00D9FF&dates=FFFFFF&border_radius=10" alt="GitHub Streak"/>
+</p>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=WaqasAsif2002&custom_title=📈%20Contribution%20Graph&bg_color=0D1117&color=00D9FF&line=FF6B6B&point=FFFFFF&area=true&hide_border=true&area_color=00D9FF&title_color=00D9FF&radius=10" width="98%" alt="Activity Graph"/>
 
@@ -314,9 +311,18 @@ console.log(
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
+## 📈 DETAILED ANALYTICS DASHBOARD
+
+<div align="center">
+
+<!-- 📅 COMMIT ACTIVITY -->
+<p align="center">
+  <img src="https://ghchart.rshah.org/00D9FF/WaqasAsif2002" width="100%" alt="WaqasAsif2002's Commit Chart"/>
+</p>
 
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 
 
 
@@ -349,6 +355,8 @@ console.log(
 ✦ Backend Developer
 ✦ Software / QA Engineering
 ```
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
 ## 🎨 SKILL PROFICIENCY RADAR
 
 ```mermaid
@@ -380,14 +388,6 @@ pie title Technology Stack Distribution
 ✦ Open Source Contributions
 ```
 
-## 📈 DETAILED ANALYTICS DASHBOARD
-
-<div align="center">
-
-<!-- 📅 COMMIT ACTIVITY -->
-<p align="center">
-  <img src="https://ghchart.rshah.org/00D9FF/WaqasAsif2002" width="100%" alt="WaqasAsif2002's Commit Chart"/>
-</p>
 
 
 ### 📫 How to reach me:
