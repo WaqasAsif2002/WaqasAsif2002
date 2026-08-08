@@ -11,8 +11,10 @@
 <p align="center">
   <img src="https://img.shields.io/badge/MERN-Stack%20Developer-00D9FF?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=000000"/>
   <img src="https://img.shields.io/badge/.NET-Developer-512BD4?style=for-the-badge&logo=dotnet&logoColor=white&labelColor=000000"/>
+    <img src="https://img.shields.io/badge/Full Stack-Architecture-FFE66D?style=for-the-badge&logo=lightning&logoColor=black&labelColor=000000"/>
   <img src="https://img.shields.io/badge/Software-Engineer-4ECDC4?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=000000"/>
   <img src="https://img.shields.io/badge/Problem-Solver-FFE66D?style=for-the-badge&logo=lightning&logoColor=black&labelColor=000000"/>
+
 </p>
 
 <p align="center">
